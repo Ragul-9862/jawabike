@@ -1,0 +1,476 @@
+@media (max-width: 786px) {
+    .navbar-brand {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: auto;
+    }
+
+    .jawa {
+        display: none;
+    }
+
+    .offcanvas-header .navbar-brand {
+        text-align: center;
+    }
+}
+
+
+body {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    overflow-x: hidden;
+}
+
+.common-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.common-spacing {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #B03035;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B03035;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.7;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(240, 238, 244, 0.6) !important;
+    border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px !important;
+    background: #B03035 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    background-color: #B03035;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid#fff;
+}
+
+#myBtn i {
+    color: #fff;
+    font-size: 20px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 20px;
+    background-color: #B03035;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+@media(max-width:1500px) {
+
+    .common-spacing {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .speedometer-content h2 {
+        font-size: 35px;
+    }
+
+    .speedometer-content span {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .timeline li {
+        font-size: 25px;
+    }
+
+    .timeline span {
+        font-size: 20px;
+    }
+
+    .selection p {
+        font-size: 18px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .text-overlay h2 {
+        font-size: 180px;
+    }
+}
+
+@media(max-width:1366px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 22px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-right: 75px;
+    }
+
+    .speedometer-content span {
+        font-size: 25px;
+    }
+
+    .speedometer-content h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .highlight-content span {
+        font-size: 60px;
+    }
+
+    .highlight-content h2 {
+        font-size: 50px;
+    }
+
+    .view h2 {
+        font-size: 50px;
+    }
+
+    .view span {
+        font-size: 60px;
+    }
+
+    .selection p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1200px) {
+    .navbar {
+        max-width: 100%;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-right: 30px;
+    }
+
+    .slide-container img {
+        max-width: 100%;
+    }
+
+    .common-spacing {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .speedometer-content h2 {
+        font-size: 25px;
+    }
+
+    .speedometer-content span {
+        font-size: 20px;
+    }
+
+    .highlight-content span {
+        font-size: 50px;
+    }
+
+    .highlight-content h2 {
+        font-size: 40px;
+    }
+
+    .view h2 {
+        font-size: 40px;
+    }
+
+    .view span {
+        font-size: 50px;
+    }
+
+    .timeline li {
+        font-size: 20px;
+    }
+
+    .timeline span {
+        font-size: 18px;
+    }
+
+    .selection p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:992px) {
+    .jawa {
+        display: none;
+    }
+    .offcanvas-header{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+   
+    .speedometer-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .degree-section {
+        height: 100%;
+    }
+
+    .select {
+        justify-content: center;
+    }
+
+    .footer-wrapper {
+        text-align: center;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .carousel-caption {
+        right: 75%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 150px;
+    }
+}
+
+@media(max-width:768px) {
+    .speedometer-content span {
+        font-size: 18px;
+    }
+
+    .speedometer-content h2 {
+        font-size: 20px;
+    }
+
+    .highlight-content span {
+        font-size: 40px;
+    }
+
+    .highlight-content h2 {
+        font-size: 30px;
+    }
+
+    .view h2 {
+        font-size: 30px;
+    }
+
+    .view span {
+        font-size: 40px;
+    }
+
+    .timeline li {
+        font-size: 18px;
+    }
+
+    .timeline span {
+        font-size: 16px;
+    }
+
+    .highlights-section {
+        height: 50vh;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        max-width: 90px;
+    }
+    
+    .navbar{
+        border-radius: 0%;
+        height:90px ;
+    }
+    .offcanvas-header{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+    .speedometer-content{
+        padding-bottom: 10px;
+    }
+
+}
+
+@media(max-width:577px) {
+
+    .social-icons img {
+        max-width: 65px;
+    }
+
+    .common-padding {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .common-spacing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .speedometer-content {
+        background-color: rgba(255, 255, 255, 0.0095);
+    }
+
+    .footer-content ul li {
+        padding-right: 10px;
+    }
+
+    .footer-content a {
+        font-size: 12px;
+    }
+
+    .speedometer-content {
+        position: inherit !important;
+        top: inherit !important;
+        left: inherit !important;
+        transform: inherit !important;
+        padding-top: 5rem;
+    }
+
+    .speedometer-wrapper {
+        height: 70vh;
+    }
+
+
+    .highlights span {
+        font-size: 25px;
+    }
+
+    .highlights h2 {
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+    .view h2 {
+        font-size: 18px;
+    }
+
+    .view span {
+        font-size: 25px;
+    }
+
+    .timeline li {
+        font-size: 16px;
+    }
+
+    .timeline span {
+        font-size: 14px;
+    }
+
+    .highlights-section {
+        height: 40vh;
+    }
+
+    .navbar-brand {
+        padding-left: 30px;
+        max-width: 100px;
+    }
+
+    .social-icons img {
+        padding-right: 1rem;
+    }
+
+    .side-button {
+        top: 22%;
+    }
+
+    .side-button-2 {
+        top: 35%;
+    }
+
+    .carousel-caption {
+        left: 35%;
+    }
+
+    .main-content {
+        margin-top: 65px;
+    }
+
+    .robot {
+        display: none;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+    }
+    .timeline-main{
+        
+    }
+
+}
