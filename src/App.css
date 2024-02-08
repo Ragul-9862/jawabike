@@ -1,4 +1,11 @@
 /* <----------------------------------- Navbar---------------------------------------------> */
+
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .navbar {
   max-width: 1543px;
   height: 115px;
@@ -6,6 +13,7 @@
   border-radius: 0px 0px 50px 50px;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ 
 }
 
 .navbar-brand {
@@ -47,6 +55,7 @@ p {
   background-position: center;
   background-size: 100% 100%;
   height: 100vh;
+  z-index: -2000;
   position: relative;
 }
 
@@ -219,15 +228,16 @@ p {
   position: relative;
   max-width: 600px;
   margin: 40px auto;
+  cursor: pointer;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  top: 31px;
+  top: 35px;
   left: 0px;
   width: 2px;
-  height: 67%;
+  height: 68%;
   background: #ffffff;
   transform: translateX(-50%);
 }
@@ -244,14 +254,65 @@ p {
   left: -13px;
   width: 25px;
   height: 25px;
-  background: #FFFF00;
+  background: #ffffff;
   border-radius: 50%;
   transform: translateY(-50%);
 }
+
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFF00;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.timeline.active::after {
+  display: block;
+}
+
+.event-1.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-50%);
+}
+
+.event-2.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.event-3.active::after {
+  background-color: #FFFF00;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+
+
 .event-2::after {
   content: '';
   position: absolute;
-  top: 41%;
+  top: 39%;
   left: -10px;
   width: 18px;
   height: 18px;
@@ -271,18 +332,47 @@ p {
   transform: translateY(-50%);
 }
 
-.event-content {
+.event-content1 {
+  max-width: 400px;
+  height: 150px;
+  padding: 15px 18px;
+}
+.event-content2 {
   max-width: 400px;
   padding: 15px 18px;
 }
-.event-content  h3{
+.event-content3 {
+  max-width: 400px;
+  padding: 15px 18px;
+}
+.event-content1  h3{
   font-weight: bold;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
 }
-.event-content p {
+.event-content1 p {
   font-weight: 800;
-  width: 125px;
+  width: 150px;
+  color: #FFFF00;
+}
+.event-content2  h3{
+  font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.event-content2 p {
+  font-weight: 800;
+  width: 150px;
+  color: #FFFF00;
+}
+.event-content3  h3{
+  font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.event-content3 p {
+  font-weight: 800;
+  width: 150px;
   color: #FFFF00;
 }
 
@@ -292,6 +382,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .color-box {
   width: 70px;
@@ -304,35 +395,78 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
 }
 
-.palette-1.active {
+/* <-------------------- Scrambler-----------------------------------> */
+
+.palette-1-scrambler.active {
   background-color: #454545;
   border: 4px solid white;
   color: white;
 }
 
-.palette-2 {
+.palette-2-scrambler {
   background-color: #20222D;
 }
 
-.palette-3 {
+.palette-3-scrambler {
   background-color: #F16D3E;
 }
 
-.palette-4 {
+.palette-4-scrambler {
   background-color: #42504C;
 }
 
-.palette-5 {
+.palette-5-scrambler {
   background-color: #B8AD6F;
 }
 
-.palette-6 {
+.palette-6-scrambler {
   background-color: #B03035;
 }
 
-.palette-7 {
+.palette-7-scrambler {
   background-color: #E0A944;
 }
+
+/* <-------------------- Roadster-----------------------------------> */
+.palette-1-Roadster.active {
+  background-color: #383838;
+  border: 4px solid white;
+  color: white;
+}
+.palette-2-Roadster {
+  background-color: #B31B21;
+}
+.palette-3-Roadster {
+  background-color: #F8F0E9;
+}
+.palette-4-Roadster{
+  background-color: #313131;
+}
+.palette-5-Roadster{
+  background-color: #394B34;
+}
+.palette-6-Roadster {
+  background-color: #374A65;
+}
+
+/* <---------------------- Adventure------------------------------------> */
+.palette-1-Adventure.active {
+  background-color: #383838;
+  border: 4px solid white;
+  color: white;
+}
+.palette-2-Adventure {
+  background-color: #B31B21;
+}
+.palette-3-Adventure {
+  background-color: #F8F0E9;
+}
+
+
+
+
+
+
 .color-palette-info p{
   margin-left: 20px;
   margin-top: 8px;
@@ -342,7 +476,32 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-family: 'Franklin Gothic Medium';
   color: rgb(187, 187, 187);
 }
+.color-palette-info-2 p{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(187, 187, 187);
+}
+.color-palette-info-3 p{
+  margin-left: 20px;
+  margin-top: 8px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(187, 187, 187);
+}
+
 .color-palette-info.active p{
+  color: rgb(255, 255, 255);
+}
+.color-palette-info-2.active p{
+  color: rgb(255, 255, 255);
+}
+.color-palette-info-3.active p{
   color: rgb(255, 255, 255);
 }
 
@@ -350,9 +509,37 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
+.color-palette-info-2 span{
+  font-size: 14px;
+  width: 200px;
+  font-weight: 600;
+}
+.color-palette-info-3 span{
+  font-size: 14px;
+  width: 200px;
+  font-weight: 600;
+}
 .view-360-container{
   padding: 30px 0px;
 }
+.left-icon{
+  font-size: 60px;
+  padding: 18px;
+  font-weight: 100;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.right-icon{
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  padding: 18px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+
 
 /* <------------------------ Highlights---------------------------------> */
 .highlights{
@@ -385,12 +572,64 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /* <-------------------------- Our Blogs -----------------------------------------------------> */
 .ourblogs-main{
-  background: url('../src/Components/assets/OurBlogs/Ourblogs-bg.png');
+  background: url('../src/Components/assets/OurBlogs/Ourblog-output.jpg');
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 800px;
 }
+.ourblogs-main-info{
+padding-top: 60px;
+height: 650px;
+}
+.ourblogs-main-info-main h1{
+  color: #000;
+  max-width: 150px;
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+
+}
+.ourblogs-main-info-main span{
+  color: #FF0;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 10px;
+}
+.icon-up{
+  position: absolute;
+  left: 5%;
+  top: 65%;
+width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.icon-down{
+  position: absolute;
+  left: 5%;
+  width: 50px;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  height: 50px;
+  z-index: 2;
+  bottom: 15%;
+  cursor: pointer;
+
+}
+
 /* <----------------- Footer----------------------------------------> */
 .footer-wrapper {
   background-image: url('../src/Components/assets/Footer/footer-bg.png');
@@ -446,4 +685,215 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .footer-content i {
   padding-right: 10px;
+}
+
+/* Add this CSS in your stylesheet or within your component */
+
+.scrambler-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px; /* Adjust the font size as needed */
+  color: white;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* Add styles in your CSS file or use a styling solution like styled-components */
+
+.VideoCarousel {
+  width: 80%;
+  margin: auto;
+}
+
+.VideoCarousel video {
+  display: block;
+  margin: 0 auto;
+}
+
+.VideoCarousel img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.preview-img-main{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  background-color: #DCDC4D;
+  width: 370px;
+  height: 175px;
+  margin-right: 10px;
+  left: -245px;
+}
+
+.ourblogs-main{
+  background: url("../src/Components/assets/OurBlogs/Ourblog-output.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+body {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+button {
+  transition: all ease-in 0.2s;
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-20%);
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  padding: 10px 15px !important;
+  border: 2px solid gray !important;
+  border-radius: 50%;
+  transform: rotateZ(-180deg);
+}
+
+.owl-carousel .owl-nav button.owl-prev *,
+.owl-carousel .owl-nav button.owl-next * {
+  vertical-align: text-bottom;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .text-slider-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-carousel .slide-elem {
+  font-family: Impact;
+  font-size: 140px;
+  z-index: -1;
+}
+
+.text-carousel span {
+  transition: all ease-out 0.5s;
+  color: lightgray;
+}
+
+.text-carousel .center span {
+  color: #000;
+}
+
+.character-carousel {
+  position: relative;
+}
+
+.character-carousel .slide-elem {
+  text-align: center;
+}
+
+.character-carousel img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.author {
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 30px 0;
+  z-index: 1;
+}
+
+.author span {
+  color: red;
+}
+
+.author a {
+  display: inline-block;
+  color: red;
+}
+
+.author a:focus,
+.author a:hover {
+  opacity: 0.8;
+}
+/* Your existing styles... */
+
+.text-slider-content {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure the text content takes full height */
+}
+
+.text-carousel {
+  width: 100%;
+}
+
+.text-carousel .item {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure each text item takes full height */
+}
+
+.character-carousel {
+  width: 100%;
+}
+
+.character-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ensure the image carousel takes full height */
+}
+
+.character-carousel .item {
+  height: 100%; /* Ensure each image item takes full height */
+}
+/* Editterr.css */
+
+.character-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.character-carousel .owl-stage {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-carousel .item {
+  height: 100%;
+}
+
+.character-carousel img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  pointer-events: none;
 }
