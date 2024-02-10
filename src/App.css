@@ -569,6 +569,36 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 65px;
     padding-left: 10px;
 } 
+.highlights-main {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.img-fluid {
+  display: inline-block;
+  width: 100%;
+  /* opacity:0 ; */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+.scroll-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 
 /* <-------------------------- Our Blogs -----------------------------------------------------> */
 .ourblogs-main{
@@ -896,4 +926,70 @@ button:hover {
   max-height: 400px;
   margin: 0 auto;
   pointer-events: none;
+}
+
+.icon-left{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.icon-right{
+  width: 50px;
+background-color: white;
+border-radius: 50%;
+padding: 2px 6px;
+height: 50px;
+border: 1px solid grey;
+  z-index: 2;
+  cursor: pointer;
+}
+.text{
+  font-size: 150px;
+  font-weight: 500;
+  font-family: croser !important;
+  color: transparent;
+  -webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: rgb(255, 255, 255); 
+}
+
+/* VerticalCarousel.css */
+
+.scrambler-1.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.scrambler-2.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slick-prev:before {
+  display: none;
 }
