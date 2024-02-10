@@ -2,29 +2,33 @@
 
 body {
   margin: 0;
-  font-family: 'Reem Kufi';
+  font-family: 'Reem Kufi' !important;
+}
 
 ::-webkit-scrollbar {
-    width: 10px !important;
+  width: 10px !important;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(240, 238, 244, 0.6) !important;
-    border-radius: 6px !important;
+  background: rgba(240, 238, 244, 0.6) !important;
+  border-radius: 6px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 8px !important;
-    background: #B03035 !important;
+  border-radius: 8px !important;
+  background: #B03035 !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
-}
-
+  cursor: pointer;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face{
+    font-family: croser;
+    src: url("../src/Components/assets/crosers/Crosers.otf");
+}
+
